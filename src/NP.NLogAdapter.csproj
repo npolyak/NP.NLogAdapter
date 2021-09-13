@@ -2,9 +2,23 @@
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
     <PackageId>NP.NLogAdapter</PackageId>
-    <Version>1.0.4</Version>
+    <Version>0.99.00</Version>
     <Authors>Nick Polyak</Authors>
     <Company>AWebPros</Company>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
   </PropertyGroup>
+  <ItemGroup>
+    <None Remove="nlog.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="nlog.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="NLog" Version="4.7.11" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="$(SolutionDir)..\..\SubModules\NP.Utilities\src\NP.Utilities.csproj" />
+  </ItemGroup>
 </Project>
