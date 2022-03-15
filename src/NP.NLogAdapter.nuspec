@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>NP.NLogAdapter</id>
+    <version>1.0.1</version>
+    <title>NP.NLogAdapter</title>
+    <authors>Nick Polyak, Ph. D.</authors>
+    <license type="expression">MIT</license>
+    <licenseUrl>https://licenses.nuget.org/MIT</licenseUrl>
+    <projectUrl>https://github.com/npolyak/NP.NLogAdapter</projectUrl>
+    <description>Adapts NLOG</description>
+    <summary>Adapts NLog</summary>
+    <releaseNotes>Adapts NLog</releaseNotes>
+    <copyright>Nick Polyak 2021</copyright>
+    <tags>Adapts NLog</tags>
+    <dependencies>
+        <dependency id="NP.Utilities" version="1.0.9"/>
+    </dependencies>
+  </metadata>
+</package>

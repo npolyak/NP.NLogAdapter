@@ -2,7 +2,6 @@
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
     <PackageId>NP.NLogAdapter</PackageId>
-    <Version>0.99.00</Version>
     <Authors>Nick Polyak</Authors>
     <Company>AWebPros</Company>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
