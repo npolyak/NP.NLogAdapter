@@ -8,6 +8,7 @@
   </PropertyGroup>
   <ItemGroup>
     <None Remove="nlog.config" />
+    <None Remove="NP.NLogAdapter.nuspec" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="nlog.config">
