@@ -1,6 +1,6 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFramework>net5.0</TargetFramework>
+    <TargetFrameworks>net5.0;net6.0;net7.0</TargetFrameworks>
     <PackageId>NP.NLogAdapter</PackageId>
     <Authors>Nick Polyak</Authors>
     <Company>AWebPros</Company>
@@ -19,6 +19,6 @@
     <PackageReference Include="NLog" Version="4.7.11" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="$(SolutionDir)..\..\SubModules\NP.Utilities\src\NP.Utilities.csproj" />
+    <ProjectReference Include="..\..\NP.Utilities\src\NP.Utilities.csproj" />
   </ItemGroup>
 </Project>
