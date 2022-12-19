@@ -1,10 +1,10 @@
 ﻿using NLog;
+using NP.DependencyInjection.Attributes;
 using NP.Utilities;
-using NP.Utilities.Attributes;
 
 namespace NP.NLogAdapter
 {
-    [Implements(typeof(ILog))]
+    [RegisterType(typeof(ILog))]
     public class NLogWrapper : ILog
     {
         public static NLogWrapper Instance { get; } = new NLogWrapper();
