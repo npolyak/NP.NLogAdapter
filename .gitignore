@@ -6,3 +6,5 @@
 /src/bin/Debug
 /src/obj
 *.nupkg
+/src/Solution/.vs/NP.NLogAdapter
+/src/bin/Release/net6.0

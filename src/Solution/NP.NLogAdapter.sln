@@ -3,11 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33020.496
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NP.NLogAdapter", "NP.NLogAdapter.csproj", "{3BD6103A-DCAE-40DE-9DF0-E7644B0FEFEB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NP.NLogAdapter", "..\NP.NLogAdapter.csproj", "{3BD6103A-DCAE-40DE-9DF0-E7644B0FEFEB}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NP.Utilities", "..\SubModules\NP.Utilities\src\NP.Utilities.csproj", "{835ADA44-B3B0-496A-AFC3-AB7BA4C0903A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NP.Utilities", "..\..\SubModules\NP.Utilities\src\NP.Utilities.csproj", "{835ADA44-B3B0-496A-AFC3-AB7BA4C0903A}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NP.DependencyInjection", "..\SubModules\NP.DependencyInjection\src\NP.DependencyInjection.csproj", "{B0EB5029-7C41-4BE8-A3CE-A11D66A8D1AA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NP.DependencyInjection", "..\..\SubModules\NP.DependencyInjection\src\NP.DependencyInjection.csproj", "{B0EB5029-7C41-4BE8-A3CE-A11D66A8D1AA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{69363420-1707-4949-9244-C28843BC00C7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -30,6 +32,10 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{835ADA44-B3B0-496A-AFC3-AB7BA4C0903A} = {69363420-1707-4949-9244-C28843BC00C7}
+		{B0EB5029-7C41-4BE8-A3CE-A11D66A8D1AA} = {69363420-1707-4949-9244-C28843BC00C7}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {33C532BD-9A91-4F5F-9828-3D11398E9804}
