@@ -6,7 +6,7 @@
 		<Company>AWebPros</Company>
 		<Title>NP.NLogAdapter</Title>
 		<Authors>Nick Polyak, Ph. D.</Authors>
-		<Version>1.0.8</Version>
+		<Version>1.0.9</Version>
 		<Copyright>Nick Polyak 2023</Copyright>
 		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
 		<Description>Adapts NLOG</Description>
@@ -31,7 +31,7 @@
 	</ItemGroup>
 
 	<ItemGroup Condition="'$(Configuration)' == 'Release'">
-		<PackageReference Include="NP.Utilities" Version="1.0.19" />
+		<PackageReference Include="NP.Utilities" Version="1.0.22" />
 		<PackageReference Include="NP.DependencyInjection" Version="1.0.9" />
 	</ItemGroup>
 
