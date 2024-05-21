@@ -1,12 +1,11 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 	<PropertyGroup>
-		<TargetFramework>net6.0</TargetFramework>
 		<PackageId>NP.NLogAdapter</PackageId>
 		<Authors>Nick Polyak</Authors>
 		<Company>AWebPros</Company>
 		<Title>NP.NLogAdapter</Title>
 		<Authors>Nick Polyak, Ph. D.</Authors>
-		<Version>1.0.9</Version>
+		<Version>1.0.10</Version>
 		<Copyright>Nick Polyak 2023</Copyright>
 		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
 		<Description>Adapts NLOG</Description>
