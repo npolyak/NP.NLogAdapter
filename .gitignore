@@ -8,3 +8,4 @@
 *.nupkg
 /src/Solution/.vs/NP.NLogAdapter
 /src/bin/Release/net6.0
+/src/bin/Release/net8.0
