@@ -9,7 +9,7 @@ namespace NP.NLogAdapter
     {
         public static NLogWrapper Instance { get; } = new NLogWrapper();
 
-        private ILogger _logger;
+        private readonly ILogger _logger;
 
         public NLogWrapper()
         {
@@ -18,11 +18,19 @@ namespace NP.NLogAdapter
 
         public void Log(LogKind logKind, string component, string msg)
         {
-            LogEventInfo logEventInfo = new LogEventInfo(logKind.ToLogLevel(), "DefaultLogger", $"{msg}");
+            var logLevel = logKind.ToLogLevel();
+            if (!_logger.IsEnabled(logLevel))
+                return;  // Skip logging when not active
 
-            logEventInfo.Properties.Add("Component", component);
+            var logEventInfo = new LogEventInfo(logLevel, _logger.Name, msg);
 
-            _logger.Log(logEventInfo);
+            if (!string.IsNullOrEmpty(component))
+            {
+                // Consider making it Logger-Name-Suffix, so one can change NLog MinLevel for specific component
+                logEventInfo.Properties.Add("Component", component);
+            }
+
+            _logger.Log(typeof(ILog), logEventInfo);  // Support NLog ${CallSite}
         }
 
         public static void SetLog()
